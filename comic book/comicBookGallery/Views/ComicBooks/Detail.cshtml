@@ -1,5 +1,17 @@
 ﻿@{
     Layout = null;
+
+    var seriesTitle = "The amazing spider-man";
+    var issueNumber = 700;
+    var description = "Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  At vero eos et accusam et justo duo dolores et ea rebum.  Lorem ipsum dolor sit amet,  no sea takimata sanctus est Lorem ipsum dolor sit amet.  Stet clita kasd gubergren,  no sea takimata sanctus est Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua. ";
+    var artist = new string[]
+    {
+        "Script: Dan Slott",
+        "Pencils: Humberto Ramos",
+        "Inks: Victor Olazaba",
+        "Colors:Edgar Delgardo",
+        "Letters: Chris Eliopoulos"
+    };
 }
 
 <!DOCTYPE html>
@@ -11,7 +23,16 @@
 </head>
 <body>
     <div>
-    <h1>hej </h1>
+        <h1>@seriesTitle</h1>
+        <h2>Issues: @issueNumber</h2>
+
+        <h5>Description:</h5>
+        <br />
+        <div>@Html.Raw(description)</div>
+
+
+        <h5>Artist:</h5>
+        <div>@artist</div>
     </div>
 </body>
 </html>
